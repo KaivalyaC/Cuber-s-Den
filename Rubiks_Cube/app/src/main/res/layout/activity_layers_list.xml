@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layerList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".LayersList">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="182dp" />
+
+    <RadioButton
+        android:id="@+id/layer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/layer2"
+        android:text="Layer 1"
+        android:onClick="layer1"
+        android:textColor="#E18383"
+        android:textSize="40sp" />
+
+    <RadioButton
+        android:id="@+id/layer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:onClick="layer2"
+        android:text="Layer 2"
+        android:textColor="#E18383"
+        android:textSize="40sp" />
+
+    <RadioButton
+        android:id="@+id/layer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layer2"
+        android:layout_centerHorizontal="true"
+        android:onClick="layer3"
+        android:text="Layer 3"
+        android:textColor="#E18383"
+        android:textSize="40sp" />
+    <Button
+        android:id="@+id/home"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:drawable/ic_menu_revert"
+        android:backgroundTint="#ffffff"
+        android:onClick="home" />
+</RelativeLayout>
